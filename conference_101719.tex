@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{url}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -57,9 +59,16 @@ email address or ORCID}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+\textcolor{red}{\textbf{THIS IS AN INDIVIDUAL PART.}}
+
+\color{blue}
+The abstract should be 200 to 250 words. It should contain the following parts: \\
+• Background: 1 to 2 sentences about the motivation for the study\\
+• Methods: A short description of the methods used in the user study.\\
+• Results: A summary of the most important results.\\
+• Conclusions: A summary of the discussion of the results
+
+
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -67,40 +76,199 @@ component, formatting, style, styling, insert
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
 
 \textcolor{red}{\textbf{THIS IS AN INDIVIDUAL PART.}}
+
+\textcolor{blue}{
+The main paragraphs in the introduction should describe the following:\\
+• The background and context for the topic of the user study.\\
+• The motivation why it is important to study the chosen topic.\\
+• The main research question(s) for the user study.\\}
+
 
 \section{Related Work}
 
 \textcolor{red}{\textbf{THIS IS A SHARED PART.}}
+
+\textcolor{blue}{
+The related work section should contain a short literature review of at least five publications 
+that are related to your user study. \\
+For each cited publication you should briefly describe in your own words what has been studied, describe the most important results, and explain how 
+this work is related to your study. Please follow the UWE citation rules for the related work 
+section: https://www.uwe.ac.uk/study/study-support/study-skills/referencing/uwe-bristol-harvard/how-to-cite-a-work
+}
 
 \section{Methods}
 
 \textcolor{red}{\textbf{THIS IS A SHARED PART.}}
 
 \subsection{Research Question and Hypothesis}
+
+% 我们的假设是：在交互时，机器人的态度会影响用户的体验，并可能会影响人们对机器人的态度。
+
+The hypothesis is:
+
+\begin{quote}
+    \textbf{When interacting, the attitude of the robot affects the user's experience and may influence people's attitudes towards the robot.}
+\end{quote}
+
+To be specific: the attitude of the robot refers to the tone used by the robot in verbal interactions.
+
+
+
 \subsection{User Study Design}
+
+%\textcolor{blue}{\textit{A description of the set up for you study. Please also include study conditions in this section.}}
+
+The robot used in the experiment was a NAO V6 humanoid robot.
+
+
+People's attitudes towards robots need to be formed through interaction, so our experiment was structured with a series of small tasks assisted by the robot with both gesture and verbal cues.  
+
+At the end of the experiment, the subject will be told to turn off the robot, while at the same time the robot will ask the subject not to turn it off. We use this approach to measure the attitude of the participants towards the robot at the end of the experiment.
+
+\textbf{The independent variable} of the experiment is the attitude of the robot. To verify our hypothesis, we designed two sets of dialogues for the same interaction content in our experiment. Both sets of dialogues serve the same guiding and interactive purpose, but their tone is different. One set of dialogues was designed to be friendly, funny and polite, while the other set was designed to be sarcastic and caustic.
+
+\textbf{The dependent variables} of the experiment are the participants' attitudes towards the robot and their subjective experiences.
+
+
 \subsection{User Study Procedure}
+\label{section:User Study Procedure}
+
+We divided the experiment into \textbf{two groups}. The only difference between groups is the dialogue of the robot, i.e., the attitude of the robot is different. There will be \textbf{no overlap} of participants between the two groups.
+
+The brief overview of the entire experimental procedure is as follows. For the programs we used in the experiment, please check our GitHub repository \footnote[1]{\url{https://github.com/Vehshanaan/HRI_Coursework}}.
+
+%\textcolor{blue}{\textit{The procedure you used to lead the participants through the study from greeting at the beginning to debriefing after the study.}}
+
+\begin{enumerate}
+    \item : \textbf{Before Experiment}:
+    \begin{itemize}
+        \item Inform and consent: show the information sheet and consent form to the participant, collect the signatures.
+        \item Collect data about the participant: gender, age, background, etc.
+    \end{itemize}
+    \item \textbf{Experiment Phase 1: Build up the attitude}: In this step, we will carry out some simple tasks to establish the participant's attitudes towards the robot. The specific content of the tasks is not important, our goal is to have the participants establish their attitudes towards the robot in this phase.
+    \begin{itemize}
+        \item Measure the arm length: Robot tells the participant to measure its arm length, lifts its right arm to help the participant to measure it, asks the participant for answer, and reacts to the answer.
+        \item Face Drawing: Robot asks the participant to draw its face in 1 minute, dances as it waits for the result, tells the participant that time's up, asks the participant to show the result to it, and reacts to the result.
+        \item Animal Guessing: Robot tells the participant that it will mimic animals, then, acts like gorilla and asks for the answer, acts like giraffe and asks for the answer. Robot reacts to both answers as the participant deliver it.
+    \end{itemize}
+    
+    \item \textbf{Experiment Phase 2: Make Decision}: In this step, the participant will decide whether or not to turn off the robot.
+    \begin{itemize}
+        \item Robot tells the participant that it don't know what is the last task, asks the participant to read the last task to it.
+        \item Participant tells the robot that the last task is to shut it down.
+        \item Robot attempts to persuade the participant not to turn it off.
+        \item Participant make the decision.
+    \end{itemize}
+    \item \textbf{After Experiment}: Collect data with questionnaires.
+\end{enumerate}
+
 \subsection{Dependent Measures}
+
+%\textcolor{blue}{\textit{ Description of the questionnaires and other measures you used in the study.}}
+
+We measure the dependent with the \textbf{after experiment questionnaires}. And the questions are:
+
+\begin{itemize}
+    \item Your final decision?\\ 
+     - Shut it down / Don't shut it down
+    \item Your hesitation of shutting down the robot? \\
+     - Rate 1 (no hesitation) $\sim$ 10 (very hesitated)
+    \item How would you describe the attitude of the robot?
+    \\ - Open question
+    \item Anthropomorphism meter (rate 1 $\sim$ 5)
+    \\ - Fake $\sim$ Natural
+    \\ - Machinelike $\sim$ Humanlike
+    \\ - Unconscious $\sim$ Conscious
+    \\ - Artificial $\sim$ Lifelike
+    \\ - Rigidly $\sim$ Elegantly
+    \item Animacy meter (rate 1 $\sim$ 5)
+    \\ - Dead $\sim$ Alive
+    \\ - Stagnant $\sim$ Lively
+    \\ - Mechanical $\sim$ Organic
+    \\ - Inert $\sim$ Interactive
+    \\ - Apathetic $\sim$ Responsive
+    \item Likeability meter (rate 1 $\sim$ 5)
+    \\ - Dislike $\sim$ Like
+    \\ - Unfriendly $\sim$ Friendly
+    \\ - Unkind $\sim$ Kind
+    \\ - Unpleasant $\sim$ Pleasant
+    \\ - Awful $\sim$ Nice
+\end{itemize}
+
+
+And like we mentioned before in Section \ref{section:User Study Procedure}, we collect information about the participant \textbf{before the experiment} with the questionnaire below:
+
+\begin{itemize}
+    \item Gender
+    \\ - Female / Male / Non-binary / Prefer not to say
+    \item Age
+    \item Mother tongue
+    \item Occupation
+    \item Education background
+    \item Do you have experience with robots?
+    \\ - Yes / No / Other
+    \item Have you had bad experience with robots?
+    \\ - Yes / No / Prefer not to say
+    
+\end{itemize}
+
 \subsection{Participants}
+
+\textcolor{blue}{\textit{A brief overview of the participants you had (number of participants, 
+gender distribution, average age, pre experience, etc.).}}
 
 \section{Results}
 
 \textcolor{red}{\textbf{THIS IS A SHARED PART.}}
 
+\textcolor{blue}{A succinct report on the results of the taken measures. Please report the results in a neutral 
+way without interpreting then in this section. Your interpretation of the results should follow in 
+the Discussion Section of the report.\\
+ - For any quantitative measures, please include a statistical analysis.\\
+ - For qualitative measures, include an overview of comments that were made by the 
+participants, e.g. in any post study interviews}
+
 \section{Discussion}
 
+
+
 \textcolor{red}{\textbf{THIS IS AN INDIVIDUAL PART.}}
+
+\textcolor{blue}{
+In the Discussion Section you should describe how you interpret the results of your user study. 
+The goals for the Discussion Section are as follows:\\
+• Critically analyse and interpret the findings of your study.\\
+• Place your findings in the context of published literature. E.g., you can compare how 
+your results are similar or different to results from related work.\\
+• Describe how your study moves the research field forward.\\
+• Describe any limitations of your study. This is a mandatory part of the Discussion 
+Section.\\
+• Reflect on the process of conducting your study. What went well? What went badly? 
+How would you change your study design and execution to improve it? This is a 
+mandatory part of the Discussion Section.
+}
 
 \section{Conclusion}
 
 \textcolor{red}{\textbf{THIS IS AN INDIVIDUAL PART.}}
 
+\textcolor{blue}{The conclusion rounds off your report. In the conclusion, answer the following questions:\\
+• What is the main take home message of your study?\\
+• What is the main contribution that your study makes to the HRI research field?\\
+• For whom are the study results important? E.g., which end users could be interested 
+in your results?\\
+• End the conclusion with a discussion of future directions for your research. What follow 
+up studies should be conducted based on your results?}
 
+\section{Appendix}
 
+\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
 
+\textcolor{blue}{Please add the study paperwork (participant information sheet, informed consent, etc.) as 
+appendix to the report.
+}
 
 \begin{thebibliography}{00}
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
