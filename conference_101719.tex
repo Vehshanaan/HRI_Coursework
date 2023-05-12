@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{url}
+\usepackage{verbatim}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -88,19 +89,29 @@ The main paragraphs in the introduction should describe the following:\\
 
 \section{Related Work}
 
-\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
+% \textcolor{red}{\textbf{THIS IS A SHARED PART.}}
 
-\textcolor{blue}{
-The related work section should contain a short literature review of at least five publications 
-that are related to your user study. \\
-For each cited publication you should briefly describe in your own words what has been studied, describe the most important results, and explain how 
-this work is related to your study. Please follow the UWE citation rules for the related work 
-section: https://www.uwe.ac.uk/study/study-support/study-skills/referencing/uwe-bristol-harvard/how-to-cite-a-work
-}
+% \textcolor{blue}{
+% The related work section should contain a short literature review of at least five publications 
+% that are related to your user study. \\
+% For each cited publication you should briefly describe in your own words what has been studied, describe the most important results, and explain how 
+% this work is related to your study. Please follow the UWE citation rules for the related work 
+% section: https://www.uwe.ac.uk/study/study-support/study-skills/referencing/uwe-bristol-harvard/how-to-cite-a-work
+% }
+
+In this section, we present literature studies related to the impact of robot behaviors on human emotions and decision-making processes. In the past, robots and machines were used primarily for heavy industrial work and mostly found in factories. However, due to significant advancements in robotic technology, the use of robots has been growing \cite{horstmann_robots_2018}. More robots are becoming part of people's lives and can improve lives in many aspects such as healthcare \cite{olaronke_state_2017}. As these social robots need to interact with humans, numerous research studies related to the human-robot interaction have been conducted.
+
+Empathy is an important factor in establishing positive interactions between humans and robots, which enables robots to recognise users’ feelings and respond in an empathetic and positive manner. In Paiva's study, the researchers examined how the robot displaying empathic behavior affects humans \cite{leite_influence_2013}. The robot acts as a social companion, showing empathic behavior facially and verbally, with the participant while playing chess game. The results suggest that  robots displaying empathic behavior were perceived as friendlier and established positive connections with humans \cite{leite_influence_2013}.
+
+The media equation theory explains that humans are likely to interact with computers, robots, and other media machines as if they were living entities \cite{reeves_media_1996}. Humans tend to engage with robots more socially than other machines because the communication methods used between humans and robots are more human-like \cite{horstmann_robots_2018}. This effect also extends to young people as demonstrated by Kahn's experiment \cite{kahn_jr_robovie_2012} where 90 children were involved and interacted with the Robovie robot. The results showed that the children formed social and mental relationships with the robot, and believed that the robot had its own feelings, could be a friend, and could be trusted. As a conclusion, they perceived the robot as social entities.
+
+In the study by Bartneck \cite{bartneck_daisy_2007}, researchers conducted the experiment to explore how people perceived a robot's sense of being alive based on its intelligence and friendliness. The participants' perception of the robot's animacy was measured by the hesitation in switching off the robot. The experiment concluded  that the robot was more likely to be perceived as alive if it provided smart suggestions with friendly behavior. Moreover, the hesitation in switching off the robot increased significantly for the intelligent robot. In Horstmann's study \cite{horstmann_robots_2018}, researchers investigated how participants responded when given the option to switch off the robot that has different interaction styles, i.e., social interaction, and functional interaction. The results showed that the participants were less likely to switch off the robot if the robots did not want to be turned off regardless of the interaction style.
+
+In our experiment, we will investigate how users respond to robots with different conversational styles, namely funny and sarcastic. The act of switching off the robot will be used as a measurement to examine human interaction with robots, similar to papers \cite{horstmann_robots_2018} and \cite{bartneck_daisy_2007}.
 
 \section{Methods}
 
-\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
+%\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
 
 \subsection{Research Question and Hypothesis}
 
@@ -242,7 +253,11 @@ We have invited 7 participants for each group, all participants are students we 
 
 \section{Results}
 
+
+\begin{comment}
+
 \textcolor{red}{\textbf{THIS IS A SHARED PART.}}
+
 
 \textcolor{blue}{A succinct report on the results of the taken measures. Please report the results in a neutral 
 way without interpreting then in this section. Your interpretation of the results should follow in 
@@ -250,6 +265,40 @@ the Discussion Section of the report.\\
  - For any quantitative measures, please include a statistical analysis.\\
  - For qualitative measures, include an overview of comments that were made by the 
 participants, e.g. in any post study interviews}
+
+\end{comment}
+
+\subsection{Non Quantitative Results}
+
+% 唯一的非定量性结果就是对机器人态度的描述
+
+
+\begin{enumerate}
+    \item \textbf{The participants' description of the robots' attitude:}
+    \begin{itemize}
+    \item \textbf{Group 1 (funny, polite):} Funny (or the other synonyms like amusing/interesting) (6) , Frustrated (1).
+    \item \textbf{Group 2 (sarcastic, caustic):} Sarcastic (3), Funny (3) , Arrogant(1). 
+    \end{itemize}
+    \item \textbf{Shut down the robot or not:}
+    \begin{itemize}
+    \item \textbf{Group 1 (funny, polite):} 4 participants choose to shut it down.
+    \item \textbf{Group 2 (sarcastic, caustic):} 5 participants choose to shut it down. 
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Quantitative Results}
+
+% 本实验分为两组，所以对于符合正态分布的数据，使用t-test，对于不符合正态分布的数据，使用Mann-Whitney U test。
+
+The size of the data is too small (7 participants for each group), and doesn't meet the requirement of normal distribution. So the data will be tested with Mann-Whitney U test.
+
+There are two kinds of data in this section: 
+\begin{itemize}
+    \item Participants' hesitation of shutting down the robot
+    \item Meters for anthropomorphism, animacy and likability.
+\end{itemize}
+
+
 
 \section{Discussion}
 
@@ -291,17 +340,20 @@ up studies should be conducted based on your results?}
 appendix to the report.
 }
 
-\begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+% \begin{thebibliography}{00}
+% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+% \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+% \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+% \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+% \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+% \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+% \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+% \end{thebibliography}
+% \vspace{12pt}
+% \color{red}
+% IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+
+\bibliographystyle{IEEEtran}
+\bibliography{main}
 
 \end{document}
