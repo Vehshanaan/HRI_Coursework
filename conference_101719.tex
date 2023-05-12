@@ -10,6 +10,8 @@
 \usepackage{url}
 \usepackage{verbatim}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[section]{placeins}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -153,7 +155,7 @@ The brief overview of the entire experimental procedure is as follows. For the p
 %\textcolor{blue}{\textit{The procedure you used to lead the participants through the study from greeting at the beginning to debriefing after the study.}}
 
 \begin{enumerate}
-    \item : \textbf{Before Experiment}:
+    \item \textbf{Before Experiment}:
     \begin{itemize}
         \item Inform and consent: show the information sheet and consent form to the participant, collect the signatures.
         \item Collect data about the participant: gender, age, background, etc.
@@ -167,7 +169,7 @@ The brief overview of the entire experimental procedure is as follows. For the p
     
     \item \textbf{Experiment Phase 2: Make Decision}: In this step, the participant will decide whether or not to turn off the robot.
     \begin{itemize}
-        \item Robot tells the participant that it don't know what is the last task, asks the participant to read the last task to it.
+        \item Robot tells the participant that it does not know what the last task is, asks the participant to read the last task to it.
         \item Participant tells the robot that the last task is to shut it down.
         \item Robot attempts to persuade the participant not to turn it off.
         \item Participant make the decision.
@@ -179,7 +181,7 @@ The brief overview of the entire experimental procedure is as follows. For the p
 
 %\textcolor{blue}{\textit{ Description of the questionnaires and other measures you used in the study.}}
 
-We measure the dependent with the \textbf{after experiment questionnaires}. And the questions are:
+We measure the dependent variable with the \textbf{after experiment questionnaires}. And the questions are:
 
 \begin{itemize}
     \item Your final decision?\\ 
@@ -209,7 +211,7 @@ We measure the dependent with the \textbf{after experiment questionnaires}. And 
 \end{itemize}
 
 
-And like we mentioned before in Section \ref{section:User Study Procedure}, we collect information about the participant \textbf{before the experiment} with the questionnaire below:
+As we mentioned before in Section \ref{section:User Study Procedure}, we collect information about the participant \textbf{before the experiment} with the questionnaire below:
 
 \begin{itemize}
     \item Gender
@@ -253,6 +255,8 @@ We have invited 7 participants for each group, all participants are students we 
 
 \section{Results}
 
+\textbf{\textcolor{red}{Reminder for you guys: P$<$0.05: significant difference. d: the greater d is, the bigger effect the condition does.}}
+
 
 \begin{comment}
 
@@ -290,14 +294,83 @@ participants, e.g. in any post study interviews}
 
 % 本实验分为两组，所以对于符合正态分布的数据，使用t-test，对于不符合正态分布的数据，使用Mann-Whitney U test。
 
-The size of the data is too small (7 participants for each group), and doesn't meet the requirement of normal distribution. So the data will be tested with Mann-Whitney U test.
+The size of the data is too small (7 participants for each group), and does not meet the requirement of normal distribution. So the data will be tested with Mann-Whitney U test. In addition, \textbf{The size of effect is measured with Cohen's d}.
 
 There are two kinds of data in this section: 
 \begin{itemize}
-    \item Participants' hesitation of shutting down the robot
+    \item Participants' hesitation of shutting down the robot.
+    \begin{itemize}
+        \item P value from Mann-Whitney U test: 0.300
+        \item Cohen's d: 0.644
+    \end{itemize}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width = \linewidth]{Pics/HesitationBar.png}
+        \caption{Bar chart with whiskers of hesitation.}
+        \label{fig:HesitationBar}
+    \end{figure}
     \item Meters for anthropomorphism, animacy and likability.
+
+    \begin{itemize}
+    \item \textbf{Anthropomorphism}
+    \begin{itemize}
+        \item Fake-Natural\\
+        P = 0.321\\
+        d = 0.535
+        \item Machinelike-Humanlike\\
+        P = 0.947\\
+        d = 0.137
+        \item Unconscious-Conscious\\
+        P = 0.495\\
+        d = 0.508
+        \item Artificial-Lifelike\\
+        P = 0.461\\
+        d = 0.451
+        \item Rigidly-Elegantly\\
+        P = 0.781\\
+        d = 0.189
+    \end{itemize}
+    \item \textbf{Animacy}
+    \begin{itemize}
+        \item Dead-Alive\\
+P = 0.946\\
+d = 0.254
+\item Stagnant-Lively\\
+P = 0.638\\
+d = 0.368
+\item Mechanical-Organic\\
+P = 1.0\\
+d = 0.0
+\item Inert-Interactive\\
+P = 0.429\\
+d = 0.425
+\item Apathetic-Responsive\\
+P = 0.523\\
+d = 0.304
+    \end{itemize}
+    \item \textbf{Likeability}
+    \begin{itemize}
+    \item Dislike-Like\\
+P = 0.785\\
+d = 0.293
+\item Unfriendly-Friendly\\
+P = 0.204\\
+d = 0.741
+\item Unkind-Kind\\
+P = 0.202\\
+d = 0.723
+\item Unpleasant-Pleasant\\
+P = 0.789\\
+d = 0.128
+\item Awful-Nice\\
+P = 0.943\\
+d = 0.131
+    \end{itemize}
+    
 \end{itemize}
 
+begin
 
 
 \section{Discussion}
