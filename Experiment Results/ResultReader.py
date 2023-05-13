@@ -198,7 +198,7 @@ for i in range(len(FunnyAnimacy)):
     print("P = "+str(p)+"\\\\")
     print("d = "+str(d))
 '''
-
+'''
 # likeability
 
 
@@ -241,3 +241,4 @@ for i in range(len(FunnyLike)):
     print("\item "+labels[i]+"\\\\")
     print("P = "+str(p)+"\\\\")
     print("d = "+str(d))
+'''
