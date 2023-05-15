@@ -11,52 +11,53 @@
 \usepackage{verbatim}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[section]{placeins}
+\usepackage{pdfpages}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Conference Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
+\title{User’s respond to robots with different conversational styles\\
 \thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\author{\IEEEauthorblockN{Runze Yuan}
+\IEEEauthorblockA{\textit{Department of Engineering Mathematics} \\
+\textit{University of Bristol}\\
+Bristol, UK \\
+oj22395@bristol.ac.uk}
+\and
+\IEEEauthorblockN{ Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockN{ Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockN{Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockN{ Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+
+%\and
+%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+
 }
 
 \maketitle
@@ -257,7 +258,7 @@ We have invited 7 participants for each group, all participants are students we 
 
 \textbf{\textcolor{red}{Reminder for you guys: P$<$0.05: significant difference. d: the greater d is, the bigger effect the condition does.}}
 
-In this section we will show statistical results. For the complete experimental data, please refer to this repository\footnote[1]{\url{https://github.com/Vehshanaan/HRI_Coursework}}.
+In this section, we will show statistical results. For the complete experimental data, please refer to this repository\footnote[1]{\url{https://github.com/Vehshanaan/HRI_Coursework}}.
 
 \begin{comment}
 
@@ -302,6 +303,7 @@ There are two kinds of data in this section:
     \begin{itemize}
         \item P value from Mann-Whitney U test: 0.300
         \item Cohen's d: 0.644
+        \item The bar chart with whiskers is shown in Fig \ref{fig:HesitationBar}.
     \end{itemize}
     \item Meters for anthropomorphism, animacy and likability.
     \begin{itemize}
@@ -323,9 +325,13 @@ There are two kinds of data in this section:
         \textbf{Anthropomorphism} & \textbf{P-value} & \textbf{Cohen's d} \\
         \hline
         \textbf{Fake-Natural} & 0.321 & 0.535 \\
+        \hline
         \textbf{Machinelike-Humanlike} & 0.947 & 0.137 \\
+        \hline
         \textbf{Unconscious-Conscious} & 0.495 & 0.508 \\
+        \hline
         \textbf{Artificial-Lifelike} & 0.461 & 0.451 \\
+        \hline
         \textbf{Rigidly-Elegantly} & 0.781 & 0.189 \\
         \hline
         \end{tabular}\\
@@ -341,9 +347,13 @@ There are two kinds of data in this section:
         \textbf{Animacy} & \textbf{P-value} & \textbf{Cohen's d} \\
         \hline
         \textbf{Dead-Alive} & 0.946 & 0.254 \\
+        \hline
         \textbf{Stagnant-Lively} & 0.638 & 0.368 \\
+        \hline
         \textbf{Mechanical-Organic} & 1.0 & 0.0 \\
+        \hline
         \textbf{Inert-Interactive} & 0.429 & 0.425 \\
+        \hline
         \textbf{Apathetic-Responsive} & 0.523 & 0.304 \\
         \hline
         \end{tabular}
@@ -359,9 +369,13 @@ There are two kinds of data in this section:
 \textbf{Likeability} & \textbf{P-value} & \textbf{Cohen's d} \\
 \hline
 \textbf{Dislike-Like} & 0.785 & 0.293 \\
+\hline
 \textbf{Unfriendly-Friendly} & 0.204 & 0.741 \\
+\hline
 \textbf{Unkind-Kind} & 0.202 & 0.723 \\
+\hline
 \textbf{Unpleasant-Pleasant} & 0.789 & 0.128 \\
+\hline
 \textbf{Awful-Nice} & 0.943 & 0.131 \\
 \hline
 \end{tabular}
@@ -425,13 +439,7 @@ in your results?\\
 • End the conclusion with a discussion of future directions for your research. What follow 
 up studies should be conducted based on your results?}
 
-\appendix
 
-\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
-
-\textcolor{blue}{Please add the study paperwork (participant information sheet, informed consent, etc.) as 
-appendix to the report.
-}
 
 % \begin{thebibliography}{00}
 % \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
@@ -449,4 +457,19 @@ appendix to the report.
 \bibliographystyle{IEEEtran}
 \bibliography{main}
 
+\appendix
+
+The study paperwork (participant information sheet, informed consent, ethical review) are attached at the end.
+
+
+
+
+%\textcolor{red}{\textbf{THIS IS A SHARED PART.}}
+
+%\textcolor{blue}{Please add the study paperwork (participant information sheet, informed consent, etc.) as appendix to the report.}
+
+\onecolumn
+\includepdf[pages=-]{Appendix/Information.pdf}
+\includepdf[pages=-]{Appendix/Consent.pdf}
+\includepdf[pages=-]{Appendix/Ethic.pdf}
 \end{document}
